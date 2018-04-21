@@ -1,0 +1,56 @@
+
+body{
+    background: antiquewhite;
+}
+
+#logo{
+    width: 200px;      
+}
+
+#upper-side{
+    height: 100%;
+    text-align: center; 
+}
+
+.mycart-btn{
+    
+    float: right;
+}
+
+.card-img-top{
+    height: 150px;
+}
+
+
+
+
+
+.filter{
+    margin-top: 30px;
+  margin-left: 130px;
+  width:200px;
+height: 200px;
+float: left;
+margin-bottom: 50px;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.btn-filter {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn-filter:hover {
+  background-color: #ddd;
+}
+#SignOut{
+    width: 15px;
+    height: 15px;
+}

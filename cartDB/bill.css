@@ -1,0 +1,13 @@
+body{
+    background: antiquewhite;
+}
+
+#logo{
+    margin-top: 50px;
+    width: 200px;      
+}
+
+#upper-side{
+    height: 100%;
+    text-align: center; 
+}
