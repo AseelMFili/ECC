@@ -6,6 +6,7 @@ php:
 
 before_script:
 	- composer install --no-interaction
-
+services:
+	- phpmyadmin
 script:
 	- vendor/bin/phpunit

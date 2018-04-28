@@ -1,0 +1,16 @@
+body{
+    background: antiquewhite;
+}
+.btn{
+    border-radius: 5px;
+}
+#logo{
+    width: 200px;  
+}
+#Hline{
+    width: 500px;
+}
+#MainDiv{
+    height: 100%;
+    text-align: center; 
+}
