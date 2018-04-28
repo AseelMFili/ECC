@@ -1,0 +1,36 @@
+<?php
+require('../db_conn.php');
+
+if(!check_customers($_COOKIE['email'],$_COOKIE['password'])){
+   
+    header('location:../Home-Pagee.php');
+    exit();
+}
+?>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="Cart.css">
+
+    </head>
+
+    <body>
+</body>
+</html>
+
+
+
+
+
+select c.username, b.ID, b.paid_flag, bi.quantity, i.item_name
+from customers c INNER JOIN bill b INNER JOIN bill_items bi INNER JOIN items i
+on c.ID = b.user_id AND bi.bill_id = b.ID AND i.ID = bi.item_id
