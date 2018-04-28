@@ -8,5 +8,5 @@ before_script:
         - composer install --no-interaction                                                                                                                       
 services:                                                                                                                                                         
         - phpmyadmin                                                                                                                                              
-script:                                                                                                                                                           
-        - phpunit --configuration phpunit.xml
+script: 
+        - phpunit
